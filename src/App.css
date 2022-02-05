@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.first-section {
+/* background-color: chartreuse; */
+background-color: #28384E;
+padding: 15px 50px 50px;
+color: #fff;
+}
+
+.first-section-cover {
+  width: 70%;
+  margin: auto;
+}
+
+.first-section .first-section-2 {
+  /* text-align: center;
+  font-size: 22px;
+  padding: 20px; */
+  text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    color: #8ABE06;
+    font-weight: 600;
+}
+
+.first-section .first-section-3 {
+  text-align: initial;
+  font-size: 18px;
+}
+
+.input{
+  width: 45%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.input:focus-visible {
+  outline: none;
+}
+
+.input-div{
+  padding: 15px;
+}
+
+.ask-btn{
+  float: left;
+  border-radius: 6px;
+    background: #28384E;
+    color: #fff;
+}
+
+.quest-btn{
+  float: right;
+  background: #8ABE06;
+    /* color:#28384E; */
+    color:#fff;
+    border-radius: 6px;
+}
+
+.btn-section {
+  width: 20%;
+  margin: auto;
+}
+
+.second-section{
+  margin: 10px;
+}
+
+.third-section{
+  text-align: left;
+    width: 43%;
+    margin: 60px auto;
+
+}
+
+.answer-class{
+  font-size: 16px;
+    border-bottom: solid 2px grey;
+}
