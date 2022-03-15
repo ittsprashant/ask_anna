@@ -18,10 +18,10 @@ function RioHome() {
         let requestInputLength = requestValue.length;
         setKeyPressed(true);
 
-        if (e.keyCode == 8 || e.keyCode == 46) {
+        if (e.keyCode === 8 || e.keyCode === 46) {
 
             console.log("check", requestValue)
-            if (requestInputLength == 0) {
+            if (requestInputLength === 0) {
                 setDotActive(false)
                 setRioAnswer("");
 
