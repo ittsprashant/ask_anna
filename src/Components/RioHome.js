@@ -12,7 +12,8 @@ function RioHome() {
     let str = "";
     let ans = "";
     const Keywords = ["Alt", "Control", "CapsLock", "Tab", "Shift", "ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Enter"];
-    const RandomAnswers = ["Have Faith! Ask the right question"];
+    const RandomAnswers = ["Have Faith! Ask the right question", "Seems you need to make a deeper connection", "If you go on being rude to me, I will never answer.",
+        "Request nicely!", "Your anxiety of proving me makes you write anything, that way I'll never answer you."];
 
     const inputRequest = (e) => {
         let requestInputLength = requestValue.length;
@@ -20,7 +21,6 @@ function RioHome() {
 
         if (e.keyCode === 8 || e.keyCode === 46) {
 
-            console.log("check", requestValue)
             if (requestInputLength === 0) {
                 setDotActive(false)
                 setRioAnswer("");
@@ -38,7 +38,6 @@ function RioHome() {
         else {
             if (!dotActive) {
                 str = requestValue + e.key
-                console.log("eee=>", str, e.key)
                 setRequestValue(str);
             }
             else {
@@ -47,14 +46,12 @@ function RioHome() {
                 ans = rioAnswer + e.key
                 setRioAnswer(ans);
 
-                console.log("show rio", ans)
             }
         }
 
     }
 
     useEffect(() => {
-        console.log("testme", dotActive)
 
         if (dotActive) {
 
@@ -75,7 +72,8 @@ function RioHome() {
             setShowAnswer(true);
         }
         else {
-            setRioAnswer(RandomAnswers[0]);
+
+            setRioAnswer(RandomAnswers[Math.round(Math.random()* (5 - 0) + 0)]);
             setShowAnswer(true);
 
         }
@@ -103,7 +101,8 @@ function RioHome() {
                     </div>
 
                     <div className="first-section-3">
-                        Welcome to Ask Anna...
+                        Welcome to Ask Anna!
+                        <br></br>
                         Do you need to ask a question? Are you looking for answers? Anna offers you a space to ask anything you want. However, before each question you must request. If the answer is not what you expected, at least you make catharsis and ask again.
                     </div>
                 </div>
