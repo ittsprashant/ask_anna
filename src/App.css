@@ -40,8 +40,9 @@
 .first-section {
 /* background-color: chartreuse; */
 background-color: #28384E;
-padding: 15px 50px 50px;
+padding: 60px 50px 80px 50px;
 color: #fff;
+margin-bottom: 35px
 }
 
 .first-section-cover {
@@ -96,7 +97,8 @@ color: #fff;
 
 .btn-section {
   width: 20%;
-  margin: auto;
+  margin: 30px auto;
+  font-size: 1.2rem;
 }
 
 .second-section{
